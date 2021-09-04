@@ -68,9 +68,9 @@ class SinglePassCluster(object):
         return
 
 if __name__ == '__main__':
-    train_corpus_filepath = "data/corpus.txt"
+    train_corpus_filepath = "data/train.txt"
     cluster_path= "result"
-    method = "tfidf"
-    theta = 0.8
+    method = "doc2vec"
+    theta = 0.85
     handler = SinglePassCluster(train_corpus_filepath, cluster_path)
-    handler.cluster(method="tfidf", theta=theta)
+    handler.cluster(method=method, theta=theta)
