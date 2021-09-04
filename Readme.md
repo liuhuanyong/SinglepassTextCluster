@@ -2,7 +2,7 @@
 SinglepassTextCluster, an TextCluster tool based on Singlepass cluster algorithm that use tfidf vector and doc2vec，which can be used for individual real-time corpus cluster task。基于single-pass算法思想的自动文本聚类小组件，内置tfidf和doc2vec两种文本向量方法，可自动输出聚类数目、类簇文档集合和簇类大小，用于自有实时数据的聚类任务。
 
 # 项目的由来
-实时热点话题、事件的发现，是针对实时信息流的一个典型应用场，如如HistoryHotEvent项目。地址：https://github.com/liuhuanyong/HistoryHotEventBase。其中包括了从2004年至2019年共16年的每日热点事件项目(004年至今共16年的历时热点标题数据库)。如何高效、快速地从大规模实时文本数据中发现具有代表性的新闻标题，并根据时间顺序挖掘出热点话题或事件的演化脉络具有十分重要的现实意义。
+实时热点话题、事件的发现，是针对实时信息流的一个典型应用场，如如HistoryHotEvent项目。地址：https://github.com/liuhuanyong/HistoryHotEventBase 。 其中包括了从2004年至2019年共16年的每日热点事件项目(004年至今共16年的历时热点标题数据库)。如何高效、快速地从大规模实时文本数据中发现具有代表性的新闻标题，并根据时间顺序挖掘出热点话题或事件的演化脉络具有十分重要的现实意义。
 在热点挖掘这个方向上，笔者主要已经进行了若干项目的探索，并从这些项目中，可以总结出一个热点事件生成和演化脉络的挖掘，可以分成四个步骤：  
 1、面向实时文本流的文本获取。可以针对特定的主题词过滤的方式进行文本语料获取（参考EventMonitor项目，地址：https://github.com/liuhuanyong/EventMonitor），也可以以无过滤的方式获取实时的文本数据流，通过步骤2、3进一步得到特定主题的文本集合。         
 2、面向实时文本流的文本聚类。目标是将众多个文本进行文本聚类，包括文本的去重，聚类成不同的文本主题（粗分类），如将偷税、漏税文本事件聚合在一起。（话题聚类、文本聚类）。     
